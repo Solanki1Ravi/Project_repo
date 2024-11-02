@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #A2D2DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mainDiv {
+    max-height: 500px;
+    /* height: 200px; */
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #16202f;
+}
+
+.mainDiv input {
+    /* padding: 10px; */
+    border: 0px  none;
+    background-color: #16202f;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 5.5rem;
+    border: 1px solid none;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.mainDiv .buttons_sec {
+    padding: 5px;
+    width: 100%;
+    /* height: 0px; */
+    border: 2px solid none;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.buttons_sec .btn_items {
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(71, 63, 48);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    /* color:aqua; */
+    transition: all 0.3s ease;
+
+
+    &:hover{
+        box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    }
+
+}
+
+
+.equal_btn , .add_btn ,.ce_btn, .ac_btn, .sub_btn,.mul_btn,.divide_btn,.dot_btn{
+    color: aqua;
+    
+}
+
+
