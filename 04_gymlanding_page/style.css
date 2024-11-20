@@ -4,121 +4,132 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #1A1A1D; */
     font-family: "Poppins", serif;
     overflow-x: hidden;
-    /* background: #ffffff url("img_tree.png") no-repeat right top;*/
 
 }
 
 html,
 body {
-    overflow-y: hidden;
     height: 100vh;
     width: 100vw;
+    background-color: black;
+    margin: 0;
     background-image: url('/images/pexels-anush-1431282.jpg');
-    height: 130%;
-
-    /* Center and scale the image nicely */
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain; /* Ensures the image covers the whole area */
+    background-position: right; /* Centers the image */
+    background-repeat: no-repeat; 
 
 }
-
 .navBar {
     width: 80%;
     margin: auto;
-    border: 1px solid transparent;
+    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    /* background-color: red; */
     background-color: transparent;
-    /* margin-top: 10px; */
-    /* flex-wrap:wrap ; */
-
-}
-
-.navbar-section a {
-    text-decoration: none;
-}
-
-.navbar-section h1 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: aliceblue;
-    padding: 5px;
-    margin-left: 15px;
-    background: transparent;
-}
-
-.nav-items ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-
-.nav-items ul a {
-    text-decoration: none;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.nav-items ul a .fa-bars {
-    visibility: hidden;
-}
-
-.nav-items ul a li {
-    list-style: none;
-    font-size: 1.2rem;
-    font-weight: 700;
+    padding: 10px 20px;
     color: white;
-    transition: all 0.5s ease;
-    margin-right: 10px;
 
-
-
-    &:hover {
-        color: blue;
-    }
 
 }
 
+.navBar .logo a {
+    text-decoration: none;
+    color: aliceblue;
+}
 
-@media (max-width:756px) {
-    body {
-        overflow-y: scroll;
-    }
+.nav-items {
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-items li {
+
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.nav-items li a:hover {
+    color: #00bcd4;
+    /* Highlight color */
+}
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+}
+
+@media (max-width:675px) {
 
     .nav-items {
-        visibility: hidden;
-    }
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+      }
 
+      .nav-items.active {
+        display: flex;
+      }
+/*
     .nav-items ul a .fa-bars {
         visibility: visible;
-    }
+        margin-right: 10px;
 
+    } */
+    .menu-toggle {
+        display: block; /* Visible on small screens */
+      }
 }
 
 /* ---------------hero section------ */
 
 .hero-section {
+    width: 100%;
     border: 1px solid transparent;
     display: flex;
-    width: 50%;
     color: aliceblue;
     margin-left: 150px;
-    align-items: start;
-    justify-content: start;
-    flex-direction: column;
-    margin-top: 150px;
-    /* margin: 20px; */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow-y: hidden;
 }
 
-.hero-section h2 {
+
+.left-hero-section {
+    width: 50%;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin-top: 110px;
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-hero-section h2 {
     padding: 10px;
     /* line-height: 2; */
     /* width: 266px; */
@@ -129,7 +140,7 @@ body {
     font-size: 4rem;
 }
 
-.hero-section p {
+.left-hero-section p {
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
@@ -138,7 +149,8 @@ body {
 }
 
 
-.hero-section button {
+
+.left-hero-section button {
     border: none;
     padding: 8px;
     font-weight: 600;
@@ -149,46 +161,24 @@ body {
     border-radius: 5px;
 }
 
-.hero-section button a {
+.left-hero-section button a {
     text-decoration: none;
     color: aliceblue;
 }
-
-
-
-
-@media (max-width:756px) {
-
-    .hero-section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 80px;
+@media (max-width:462px) {
+    .left-hero-section h2{
+        font-size: 1rem;
     }
-
-    .hero-section h2 {
-        font-size: 32px;
-        margin-bottom: 5px;
-
-    }
-
-    .hero-section p {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1;
-        margin-bottom: 10px;
-        overflow-y: hidden;
-    }
-
-    .hero-section button {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1;
-        border-radius: 5px;
-    }
-
-
+    
 }
+
+@media (max-width:675px) {
+    .left-hero-section h2{
+        font-size: 2rem;
+    }
+    
+}
+
 
 
 /* ----------social media section-------- */
@@ -199,10 +189,10 @@ body {
     border: 1px solid transparent;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 130px;
 }
 
 .social-media-section a {
@@ -211,12 +201,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 30px; */
-    /* color: aliceblue; */
     text-decoration: none;
-    /*font-weight: bold;*/
-    /*font-size: 1.2rem; */
-    transition: all 0.3s ease;
 
 
     &:hover {
@@ -253,6 +238,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
     }
 }
 
@@ -292,12 +278,15 @@ form {
     visibility: hidden;
     transition: visibility 0s linear 0.3s, opacity 0.3s ease-in-out;
 
-    /* transition: visibility 0.3s ease;*/ /*Optional: add a smooth transition */
+    /* transition: visibility 0.3s ease;*/
+    /*Optional: add a smooth transition */
 }
 
 .user-heading:hover .hidden-div {
-    visibility: visible; /* Make it visible */
-    opacity: 1; /* Make it fully opaque */
+    visibility: visible;
+    /* Make it visible */
+    opacity: 1;
+    /* Make it fully opaque */
     transition-delay: 0s;
 }
 
