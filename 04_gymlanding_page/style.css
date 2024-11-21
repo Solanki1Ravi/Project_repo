@@ -15,14 +15,18 @@ body {
     width: 100vw;
     background-color: black;
     margin: 0;
-    background-image: url('/images/pexels-anush-1431282.jpg');
-    background-size: contain; /* Ensures the image covers the whole area */
-    background-position: right; /* Centers the image */
-    background-repeat: no-repeat; 
+    /* background-image: url('/images/pexels-anush-1431282.jpg');
+    background-size: contain;
+    /*background-position: right;*/
+    /*background-repeat: no-repeat; */
+    /*background-attachment: fixed; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+
 
 }
 .navBar {
-    width: 80%;
+    width: 70%;
     margin: auto;
     border: 1px solid black;
     display: flex;
@@ -33,7 +37,6 @@ body {
     background-color: transparent;
     padding: 10px 20px;
     color: white;
-
 
 }
 
@@ -73,7 +76,7 @@ body {
     border: none;
 }
 
-@media (max-width:675px) {
+@media (max-width:750px) {
 
     .nav-items {
         display: none;
@@ -105,24 +108,25 @@ body {
 /* ---------------hero section------ */
 
 .hero-section {
-    width: 100%;
+    width: 70%;
+    margin: auto;
     border: 1px solid transparent;
-    display: flex;
     color: aliceblue;
-    margin-left: 150px;
+    /* margin-left: 150px; */
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     overflow-y: hidden;
+    margin-top: 110px;
 }
 
 
 .left-hero-section {
-    width: 50%;
-    margin-right: auto;
+    width: 80%;
+    margin: auto;
     padding: 10px;
     border: 1px solid transparent;
-    margin-top: 110px;
     display: flex;
     align-items:start;
     justify-content: center;
@@ -165,14 +169,42 @@ body {
     text-decoration: none;
     color: aliceblue;
 }
+
+
+
+
 @media (max-width:462px) {
+
+    .left-hero-section{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-right: 40%;
+    }
     .left-hero-section h2{
         font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
     }
     
 }
 
-@media (max-width:675px) {
+@media (max-width:750px) {
+    
+    .left-hero-section{
+        width: 80%;
+        border: 1px solid transparent;
+        margin: auto;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
     .left-hero-section h2{
         font-size: 2rem;
     }
@@ -184,7 +216,8 @@ body {
 /* ----------social media section-------- */
 
 .social-media-section {
-    width: 35%;
+    width: 40%;
+    margin: auto;
     /* height: 90px; */
     border: 1px solid transparent;
     display: flex;
@@ -192,7 +225,7 @@ body {
     justify-content: space-evenly;
     flex-direction: row;
     margin-top: 30px;
-    margin-left: 130px;
+    /* margin-left: 130px; */
 }
 
 .social-media-section a {
@@ -202,11 +235,6 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-
-
-    &:hover {
-        color: rgb(135, 135, 200);
-    }
 }
 
 
@@ -221,12 +249,11 @@ body {
 }
 
 
-@media (max-width:756px) {
+@media (max-width:750px) {
 
     .social-media-section {
-        width: 35%;
-        margin-top: 30px;
-        margin-left: 190px;
+        width: 40%;
+ 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -239,6 +266,14 @@ body {
         justify-content: center;
         align-items: center;
         text-decoration: none;
+    }
+    .social-media-section a i {
+        height: 40px;
+        max-width: 40px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -291,18 +326,14 @@ form {
 }
 
 .login-ares {
-    width: 300px;
+    width: 400px;
+    /* height: 100px; */
     /* min-height: 200px; */
-    border: 1px solid transparent;
+    border: 1px solid red;
+    padding: 15px;
+
 }
 
-/* @media (max-width:765px) {
-
-    .user-heading .hidden-div{
-        visibility: visible;
-    }
-    
-} */
 .username {
     display: flex;
     align-items: center;
@@ -312,6 +343,7 @@ form {
 
 .username input {
     width: 80%;
+    margin: auto;
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 15px;
@@ -339,6 +371,7 @@ form {
 
 .password input {
     width: 80%;
+    margin: auto;
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 15px;
@@ -361,22 +394,24 @@ form {
 }
 
 .login-btn {
+    width: 200px;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
+    gap: 15px;
 }
 
-.login-btn i {
+/* .login-btn i {
     height: 40px;
     width: 40px;
-    /* margin-right: 20px; */
     border-radius: 50%;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .login-btn button {
     width: 80%;
@@ -392,6 +427,9 @@ form {
     font-size: 1.2rem;
     /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
     margin-bottom: 20px;
+    transition: all 0.4s ease;
+
+
 }
 
 .forgot-password-div {
