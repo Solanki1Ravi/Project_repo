@@ -14,31 +14,19 @@ body {
     justify-content: center;
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y:hidden;
+    overflow-y: hidden;
 }
 
-.contact-section {
+.contact-section{
     width: 80%;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-
+    border: 1px solid transparent;
+    padding: 20px;
 }
 
-.contact-section .left-section {
-    width: 40%;
-    margin: auto;
-}
-
-.left-section iframe{
-    border-radius: 15px;
-
-}
 .contact-section .right-section {
     background-color: #fff;
-    max-width: 40%;
+    width: 40%;
     margin: auto;
     border: 1px solid transparent;
     border-radius: 15px;
@@ -66,7 +54,11 @@ body {
     font-weight: 600;
 
 }
+.contact-heading p {
+    font-weight: 400;
+    font-size: 1rem;
 
+}
 
 .right-section form {
     width: 100%;
@@ -116,24 +108,78 @@ form .text-area {
     color: #fff;
     font-weight: bold;
     font-size: 1.2rem;
-    box-shadow: 0 4px 8px #AF47D2; /* Enhance shadow on focus */
+    box-shadow: 0 4px 8px #AF47D2;
+    margin-bottom: 20px;
+    /* Enhance shadow on focus */
 
 }
+
+@media (min-width: 246px) and (max-width: 361px) {
+    .contact-section .right-section {
+        width: 80%;
+        /* margin: auto; */
+    }
+    .contact-heading p {
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width: 362px) and (max-width: 724px) {
+    .contact-section .right-section {
+        width: 80%;
+        /* margin: auto; */
+    }
+    .contact-heading p {
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width: 752px) and (max-width: 1257px) {
+    .contact-section .right-section {
+        width: 60%;
+        margin: auto;
+    }
+    .contact-heading p {
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+}
+
 
 @media (max-width:725px) {
     .contact-heading h1 {
-       font-weight: bold;
-    font-size: 1rem;
+        font-weight: bold;
+        font-size: 1rem;
     }
-    
-.submit-btn {
-    font-weight: bold;
-    width: 70px;
-    font-size: 1rem;
-    box-shadow: 0 4px 8px #AF47D2; /* Enhance shadow on focus */
 
+    .contact-heading p {
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-weight: bold;
+        width: 70px;
+        font-size: 1rem;
+        box-shadow: 0 4px 8px #AF47D2;
+        /* Enhance shadow on focus */
+
+    }
 }
-}
+
 @media (max-width:1262px) {
     .contact-section {
         width: 80%;
@@ -142,19 +188,21 @@ form .text-area {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    
+
     }
+
     .contact-heading {
-       
+
         display: flex;
         flex-wrap: wrap;
     }
-    .left-section iframe{
+
+    .left-section iframe {
         display: none;
         /* height: 200px; */
         /* width: 200px; */
     }
 
 
-    
+
 }
