@@ -114,6 +114,13 @@ form .text-area {
 
 }
 
+@media (max-width:245px) {
+
+      .contact-section .right-section {
+        width: 80%;
+        /* margin: auto; */
+    }
+}
 @media (min-width: 246px) and (max-width: 361px) {
     .contact-section .right-section {
         width: 80%;
