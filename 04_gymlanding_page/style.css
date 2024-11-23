@@ -498,10 +498,10 @@ form {
     color: #fff;
 }
 
-.about-section video {
+.about-section img {
     width: 40%;
     margin: auto;
-    width: 620px;
+    width: 420px;
     padding: 5px;
     border-radius: 5px;
 
@@ -539,10 +539,10 @@ form {
 /* -------service section------ */
 
 .service-section {
-    background-color: #fff;
+    background-color: #231c1c;
     max-width: 100%;
     margin: auto;
-    color: #1A1A1D;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,7 +569,7 @@ form {
 .first-div .text-div {
     width: 45%;
     margin: auto;
-    border: 1px solid red;
+    border: 1px solid transparent;
     padding: 5px;
     /* margin-left: 200px; */
 }
@@ -582,7 +582,7 @@ form {
 .text-div p {
     font-weight: 500;
     font-size: 1.2rem;
-    color: #29292b;
+    color: #fff;
 }
 
 
@@ -622,7 +622,8 @@ form {
 
 .second-div-img img {
     padding: 8px;
-    border-radius: 5px;
+    width: 500px;
+    border-radius: 15px;
 }
 
 .second-div .second-text-div {
@@ -634,13 +635,13 @@ form {
 }
 
 .second-text-div h2 {
-    color: #1A1A1D;
+    color: #fff;
     font-weight: 500;
     font-size: 2rem;
 }
 
 .second-text-div p {
-    color: #29292b;
+    color: #fff;
     font-weight: 500;
     font-size: 1.2rem;
 }
@@ -663,7 +664,7 @@ form {
     .first-div .text-div {
         width: 80%;
         margin: auto;
-        border: 1px solid red;
+        border: 1px solid transparent;
         padding: 5px;
         text-align: center;
         /* margin-left: 200px; */
@@ -671,11 +672,13 @@ form {
     .first-div .img-div {
         width: 80%;
         margin: auto;
-        border: 1px solid red;
+        border: 1px solid transparent;
         padding: 5px;
         text-align: center;
         /* margin-right: 90px; */
     }
+
+    
     .service-section .second-div {
         width: 80%;
         margin: auto;
@@ -691,13 +694,13 @@ form {
     .second-div .second-div-img {
         width: 85%;
         margin: auto;
-        border: 1px solid red;
+        border: 1px solid transparent;
     }
     
     .second-div .second-text-div {
         width: 80%;
         margin: auto;
-        border: 1px solid red;
+        border: 1px solid transparent;
         padding: 15px;
         text-align: center;
     
