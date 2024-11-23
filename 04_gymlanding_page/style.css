@@ -567,7 +567,7 @@ form {
 }
 
 .first-div .text-div {
-    width: 45%;
+    width: 40%;
     margin: auto;
     border: 1px solid transparent;
     padding: 5px;
@@ -602,7 +602,7 @@ form {
 
 
 .service-section .second-div {
-    width: 80%;
+    width: 92%;
     margin: auto;
     border: 1px solid transparent;
     display: flex;
@@ -679,6 +679,37 @@ form {
     }
 
     
+    .service-section .second-div {
+        width: 80%;
+        margin: auto;
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 15px;
+    
+    }
+
+    .second-div .second-div-img {
+        width: 85%;
+        margin: auto;
+        border: 1px solid transparent;
+    }
+    
+    .second-div .second-text-div {
+        width: 80%;
+        margin: auto;
+        border: 1px solid transparent;
+        padding: 15px;
+        text-align: center;
+    
+    }
+
+}
+
+@media (max-width:1037px) {
+
     .service-section .second-div {
         width: 80%;
         margin: auto;
